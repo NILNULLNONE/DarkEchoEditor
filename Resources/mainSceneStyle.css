@@ -1,0 +1,63 @@
+.root{
+	active-color: orange;	
+	hover-color: steelblue;
+}
+
+#cell-pane, #container, .split-pane{
+	-fx-background-color: white;
+}
+
+#mid-pane{
+	-fx-background-color: transparent;
+}
+
+#cell-pane{
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 50, 0, 0, 0);
+}
+
+
+#active-cir{
+	-fx-fill: active-color;
+}
+
+.lcell{
+	-fx-stroke: #bbb;
+	-fx-stroke-width: 1;
+}
+.rectangle{
+	-fx-fill: transparent;
+}
+
+.ocell{
+	-fx-fill: yellow;
+}
+
+.line{
+	-fx-stroke-width: 3;
+	-fx-stroke: black;
+}
+
+.line:hover{
+	-fx-stroke: hover-color !important;
+}
+
+.circle:hover{
+	-fx-fill: hover-color !important;
+}
+
+#active-line{
+	-fx-stroke: active-color;
+}
+
+.split-pane > .split-pane-divider {
+	-fx-pref-width: 1;
+	-fx-background-color: #ccc;
+}
+
+.selected-cir{
+	-fx-fill: derive(active-color, -30%);
+}
+
+.selected-line{
+	-fx-stroke: deriver(active-color, -30%);
+}
